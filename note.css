@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: rgba(255, 255, 255, 0.867);
+}
+
+.header {
+    font-size: 30px;
+}
+
+.new-note {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.new-note button {
+    height: 40%;
+}
+
+.new-note input,
+.new-note textarea {
+    width: 150%;
+}
+
+#btn-save {
+    width: 40%;
+}
+
+.new-note input,
+.new-note textarea {
+    width: 100%;
+}
+
+.new-note input,
+.new-note textarea,
+#btn-save {
+    font-family: Arial;
+    padding: 5px 10px;
+    display: block;
+    margin-bottom: 15px;
+    background-color: #dddd;
+    background-clip: border-box;
+    border: 1px solid #dddd;
+    border-radius: .25rem;
+    margin-top: 5vh;
+}
+
+#notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#note {
+    background-color: #ff6d41;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    min-height: 100px;
+    border: 1px solid #ff6d41;
+    border-radius: .25rem;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+#note .title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#note .title a {
+    color: black;
+}
+
+#note .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+#note .description {
+    font-size: 12px;
+}
